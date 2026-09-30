@@ -1,5 +1,10 @@
-1. Personal Information
+# Part I: Variables (let, var, const)
 
+## Part A — 4 Questions
+
+### 1. Personal Information
+
+```javascript
 let name = "Manthan";
 let age = 17;
 let city = "Gandhinagar";
@@ -7,24 +12,28 @@ let city = "Gandhinagar";
 console.log(name);
 console.log(age);
 console.log(city);
+```
 
-2. Change the Score
+### 2. Change the Score
 
+```javascript
 let score = 50;
 score = 80;
 
 console.log(score);
+```
 
-let is used because the value changes.
+### 3. Constant Value
 
-3. Constant Value
-
+```javascript
 const PI = 3.14;
 
 console.log(PI);
+```
 
-4. Uninitialized Variables
+### 4. Uninitialized Variables
 
+```javascript
 var num1;
 let num2;
 
@@ -36,15 +45,15 @@ num2 = 20;
 
 console.log(num1);
 console.log(num2);
+```
 
-Output initially:
+---
 
-undefined
-undefined
-Part B
+## Part B — 4 Questions
 
-5. Choose the Correct Keyword
+### 5. Choose the Correct Keyword
 
+```javascript
 const studentName = "Manthan";
 let marks = 75;
 const schoolName = "ABC School";
@@ -54,63 +63,76 @@ marks = 90;
 console.log(studentName);
 console.log(marks);
 console.log(schoolName);
+```
 
-6. Understand Scope
+### 6. Understand Scope
 
+```javascript
 if (true) {
     var a = 10;
     let b = 20;
     const c = 30;
 }
 
-console.log(a); // 10
-console.log(b); // Error
-console.log(c); // Error
+console.log(a);
+console.log(b);
+console.log(c);
+```
 
-Explanation: var is function-scoped, while let and const are block-scoped.
+**Observation:**
+`var` can be accessed outside the block, but `let` and `const` cannot be accessed outside the block.
 
-7. Test Re-declaration
+### 7. Test Re-declaration
 
+```javascript
 var user = "Manthan";
 var user = "Rahul";
 
 console.log(user);
+```
 
-Output:
+**Output:**
 
+```text
 Rahul
+```
 
-With let:
+Using `let`:
 
+```javascript
 let user = "Manthan";
-let user = "Rahul"; // Error
+let user = "Rahul";
+```
 
-Answer: var allows re-declaration in the same scope; let does not.
+**Observation:**
+`var` allows re-declaration, while `let` does not allow re-declaration in the same scope.
 
-8. Test Re-assignment
+### 8. Test Re-assignment
 
+```javascript
 var a = 10;
 let b = 20;
 const c = 30;
 
 a = 100;
 b = 200;
-c = 300; // Error
+c = 300;
 
 console.log(a);
 console.log(b);
 console.log(c);
+```
 
-var → re-assignment allowed
-let → re-assignment allowed
-const → re-assignment not allowed
+**Observation:**
+`var` and `let` allow re-assignment, but `const` does not allow re-assignment and produces an error.
 
-Part C
+---
 
-9. Predict and Explain
+## Part C — 2 Questions
 
-Given:
+### 9. Predict and Explain
 
+```javascript
 var x = 10;
 
 if (true) {
@@ -122,29 +144,30 @@ if (true) {
 console.log(x);
 console.log(y);
 console.log(z);
+```
 
-Output:
+**Output:**
 
+```text
 20
 ReferenceError
 ReferenceError
+```
 
-Why?
+**Explanation:**
+`x` is declared using `var`, so it can be accessed outside the `if` block. Its value becomes `20`.
 
-x is declared using var, so it is accessible outside the if block. Its value becomes 20.
-y uses let, so it is limited to the if block.
-z uses const, so it is also limited to the if block.
-10. Fix the Program
+`y` is declared using `let`, so it is limited to the `if` block.
 
-Original problems:
+`z` is declared using `const`, so it is also limited to the `if` block.
 
-const name; → a const variable must be initialized.
-let age is declared twice in the same scope.
-country is declared inside the if block, so it can't be accessed outside.
-const score cannot be reassigned.
+Therefore, `console.log(y)` and `console.log(z)` produce `ReferenceError`.
 
-Corrected program:
+---
 
+### 10. Fix the Program
+
+```javascript
 const name = "Manthan";
 
 let age = 20;
@@ -164,3 +187,15 @@ score = 80;
 console.log(name);
 console.log(age);
 console.log(score);
+```
+
+**Explanation:**
+`const name` is initialized when declared.
+
+`age` is declared only once and then its value is changed.
+
+`country` is printed inside the `if` block because `let` is block-scoped.
+
+`city` can be accessed outside the block because it is declared using `var`.
+
+`score` is changed from `50` to `80`, so it uses `let` instead of `const`.
