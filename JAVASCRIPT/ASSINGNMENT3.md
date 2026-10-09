@@ -1,294 +1,496 @@
-// ==========================================
-// ASSIGNMENT: JAVASCRIPT OPERATORS
-// ==========================================
+A] Arithmetic Operators
+1. Addition (+)
 
+1. Total school collection:
 
-// ==========================================
-// A] ARITHMETIC OPERATORS
-// ==========================================
+₹15,000 + ₹12,500 = ₹27,500
 
+2. Total pages read:
 
-// ------------------------------------------
-// 1. ADDITION +
-// ------------------------------------------
+18 + 25 = 43 pages
 
-// Q1
-console.log(15000 + 12500); // 27500
+3. Total items sold:
 
-// Q2
-console.log(18 + 25); // 43
+125 + 178 = 303 items
 
-// Q3
-console.log(125 + 178); // 303
+4. Predict the output:
 
-// Q4
-let a1 = "10";
-let b1 = 5;
-let result1 = a1 + b1;
-console.log(result1); // 105
+Output: "105"
 
-// Q5
-let x1 = 5;
-let y1 = "3";
-let result2 = x1 + y1;
-console.log(result2); // 53
+Explanation: When + is used with a string, JavaScript joins the values as strings instead of adding them numerically.
 
-// Q6
-console.log(15 + 27); // 42
+5. Predict the output:
 
-// Q7
-console.log(350 + 45); // 395
+Output: "53"
 
-// Q8
-console.log("25" + 10); // 2510
+Explanation: The number 5 is converted to a string and joined with "3".
 
-// Q9
-let spent = 750 + 320;
-let balance = 2000 - spent;
+6. 15 + 27 = 42
 
-console.log(spent);   // 1070
-console.log(balance); // 930
+7. Total price of a book and a pen:
 
-// Q10
-console.log(5 + "5" + 5); // 555
-console.log(5 + 5 + "5"); // 105
-console.log("5" + 5 + 5); // 555
+₹350 + ₹45 = ₹395
 
+8. "25" + 10 gives "2510" because the + operator performs string concatenation when one operand is a string.
 
+9. Remaining wallet balance:
 
-// ------------------------------------------
-// 2. SUBTRACTION -
-// ------------------------------------------
+Total spent = ₹1,070. Remaining balance = ₹930.
 
-// Q1
-console.log(80 - 53); // 27
+10. Predict and explain the outputs:
 
-// Q2
-console.log(500 - 35); // 465
+First output: "555" — the first addition joins 5 and "5" into a string, then joins the last 5.
 
-// Q3
-console.log(2500 - 875); // 1625
+Second output: "105" — 5 + 5 is calculated first, giving 10, which is then joined with "5".
 
-// Q4
-let a2 = "10";
-let b2 = 3;
-let result3 = a2 - b2;
-console.log(result3); // 7
+Third output: "555" — the string comes first, so the remaining values are joined to it.
 
-// Q5
-let x2 = "20";
-let y2 = "5";
-let result4 = x2 - y2;
-console.log(result4); // 15
+2. Subtraction (-)
 
-// Q6
-console.log(100 - 37); // 63
+1. Empty bus seats:
 
-// Q7
-console.log(500 - 175); // 325
+80 − 53 = 27 seats
 
-// Q8
-console.log("50" - 20);   // 30
-console.log("50" - "20"); // 30
+2. Final marks:
 
-// Q9
-let apples = 240 - 95 - 67;
-console.log(apples); // 78
+500 − 35 = 465 marks
 
-// Q10
-console.log("100" - 50); // 50
-console.log("abc" - 10); // NaN
-console.log(10 - "5" - "2"); // 3
-console.log("10" - "5" - "2"); // 3
+3. Remaining boxes:
 
+2,500 − 875 = 1,625 boxes
 
+4. Predict the output:
 
-// ------------------------------------------
-// 3. MULTIPLICATION *
-// ------------------------------------------
+Output: 7
 
-// Q1
-console.log(45 * 8); // 360
+Explanation: JavaScript converts the numeric string "10" into a number when using subtraction.
 
-// Q2
-console.log(120 * 6); // 720
+5. Predict the output:
 
-// Q3
-console.log(7 * 15); // 105
+Output: 15
 
-// Q4
-let a3 = "5";
-let b3 = 4;
-let result5 = a3 * b3;
-console.log(result5); // 20
+6. 100 - 37 = 63
 
-// Q5
-let x3 = "10";
-let y3 = "2";
-let result6 = x3 * y3;
-console.log(result6); // 20
+7. Water remaining:
 
-// Q6
-console.log(12 * 8); // 96
+500 − 175 = 325 litres
 
-// Q7
-console.log(299 * 4); // 1196
+8. Both "50" - 20 and "50" - "20" produce 30. JavaScript converts the numeric strings into numbers before subtraction.
 
-// Q8
-console.log("7" * 6);   // 42
-console.log("7" * "6"); // 42
+9. Remaining apples:
 
-// Q9
-let units = 45 * 8;
-console.log(units); // 360
+Answer: 78 apples.
 
-// Q10
-console.log("5" * 3 * "2"); // 30
-console.log("abc" * 4); // NaN
-console.log(10 * "2.5"); // 25
-console.log("10" * "2.5" * "0"); // 0
+10. Predict and explain:
 
+First output: 50 — "100" is converted to 100.
 
+Second output: NaN — "abc" cannot be converted into a valid number.
 
-// ------------------------------------------
-// 4. DIVISION /
-// ------------------------------------------
+Third output: 3 — 10 - 5 = 5, then 5 - 2 = 3.
 
-// Q1
-console.log(144 / 12); // 12
+Fourth output: 3 — both strings are converted into numbers, and subtraction proceeds from left to right.
 
-// Q2
-console.log(360 / 6); // 60
+3. Multiplication (*)
 
-// Q3
-console.log(72000 / 9); // 8000
+1. Cost of 8 notebooks:
 
-// Q4
-let a4 = "20";
-let b4 = 4;
-let result7 = a4 / b4;
-console.log(result7); // 5
+₹45 × 8 = ₹360
 
-// Q5
-let x4 = "100";
-let y4 = "5";
-let result8 = x4 / y4;
-console.log(result8); // 20
+2. Production in 6 hours:
 
-// Q6
-console.log(144 / 12); // 12
+120 × 6 = 720 bottles
 
-// Q7
-console.log(360 / 9); // 40
+3. Total plants:
 
-// Q8
-console.log("100" / 4);   // 25
-console.log("100" / "4"); // 25
+7 × 15 = 105 plants
 
-// Q9
-let share = 2400 / 6;
-console.log(share); // 400
+4. Predict the output:
 
-// Q10
-console.log(10 / 0); // Infinity
-console.log(-10 / 0); // -Infinity
-console.log(0 / 0); // NaN
-console.log("20" / "4" / 2); // 2.5
-console.log("abc" / 5); // NaN
+Output: 20
 
+5. Predict the output:
 
+Output: 20
 
-// ------------------------------------------
-// 5. MODULUS %
-// ------------------------------------------
+Explanation: The multiplication operator converts numeric strings into numbers.
 
-// Q1
-console.log(53 % 5); // 3
+6. 12 * 8 = 96
 
-// Q2
-console.log(128 % 10); // 8
+7. Cost of 4 pizzas:
 
-// Q3
-console.log(237 % 6); // 3
+₹299 × 4 = ₹1,196
 
-// Q4
-console.log(185 % 40); // 25
+8. Both "7" * 6 and "7" * "6" produce 42.
 
-// Q5
-let a5 = 10;
-let b5 = 0;
-let result9 = a5 % b5;
-console.log(result9); // NaN
+9. Factory production:
 
-// Q6
-console.log(29 % 5); // 4
+Answer: 360 units.
 
-// Q7
-console.log(23 % 4); // 3
+10. Predict and explain:
 
-// Q8
-console.log(0 % 7); // 0
-console.log(15 % 0); // NaN
+First output: 30
 
-// Q9
-console.log(Math.floor(47 / 6)); // 7 full sheets
-console.log(47 % 6); // 5 pages left
+Second output: NaN — "abc" is not a valid numeric value.
 
-// Q10
-console.log(17 % 5); // 2
-console.log(-17 % 5); // -2
-console.log(17 % -5); // 2
-console.log(-17 % -5); // -2
-console.log(10 % 0); // NaN
+Third output: 25
 
+Fourth output: 0
 
+4. Division (/)
 
-// ------------------------------------------
-// 6. EXPONENTIATION **
-// ------------------------------------------
+1. Pencils per student:
 
-// Q1
-console.log(6 ** 3); // 216
+144 ÷ 12 = 12 pencils
 
-// Q2
-console.log(9 ** 2); // 81
+2. Average distance per hour:
 
-// Q3
-console.log(5 ** 4); // 625
+360 ÷ 6 = 60 kilometres per hour
 
-// Q4
-console.log(1024 ** 2); // 1048576
+3. Money per department:
 
-// Q5
-let base = 2;
-let power = -1;
-let result10 = base ** power;
-console.log(result10); // 0.5
+₹72,000 ÷ 9 = ₹8,000
 
-// Q6
-console.log(3 ** 4); // 81
+4. Predict the output:
 
-// Q7
-console.log(9 ** 2); // 81
+Output: 5
 
-// Q8
-console.log(2 ** 5); // 32
-console.log(5 ** 2); // 25
+5. Predict the output:
 
-// Q9
-console.log(2 ** 3 ** 2); // 512
-console.log((2 ** 3) ** 2); // 64
-console.log(2 ** -3); // 0.125
+Output: 20
 
-// console.log(-2 ** 2); 
-// SyntaxError
+6. 144 / 12 = 12
 
-console.log((-2) ** 2); // 4
+7. Students per classroom:
 
-console.log(4 ** 0.5); // 2
+360 ÷ 9 = 40 students
 
-// Q10
-let a6 = 10;
-let b6 = 0;
-let result11 = a6 ** b6;
-console.log(result11); // 1
+8. Both "100" / 4 and "100" / "4" produce 25.
+
+9. Bill per friend:
+
+Answer: ₹400 per friend.
+
+10. Predict and explain:
+
+First output: Infinity
+
+Second output: -Infinity
+
+Third output: NaN
+
+Fourth output: 2.5
+
+Fifth output: NaN
+
+Explanation: Dividing a positive or negative nonzero number by zero produces positive or negative infinity. 0 / 0 is undefined mathematically and produces NaN in JavaScript. Invalid numeric strings also produce NaN.
+
+5. Modulus (%)
+
+The modulus operator returns the remainder after division.
+
+1. Students left over:
+
+53 % 5 = 3 students
+
+2. Candies left unpacked:
+
+128 % 10 = 8 candies
+
+3. Toys left over:
+
+237 % 6 = 3 toys
+
+4. People left after filling full buses:
+
+185 % 40 = 25 people
+
+5. Predict the output:
+
+Output: NaN
+
+6. 29 % 5 = 4
+
+7. 23 % 4 = 3 chocolates left over.
+
+8. 0 % 7 gives 0, while 15 % 0 gives NaN because division by zero cannot produce a defined remainder.
+
+9. Pages per sheet:
+
+Answer: 7 full sheets and 5 pages left over.
+
+10. Predict and explain the outputs:
+
+First output: 2
+
+Second output: -2
+
+Third output: 2
+
+Fourth output: -2
+
+Fifth output: NaN
+
+Explanation: In JavaScript, the remainder generally has the same sign as the dividend (the number on the left). Therefore, negative dividends produce negative remainders in these examples.
+
+6. Exponentiation (**)
+
+The exponentiation operator raises a base number to a power.
+
+1. Volume of a cube:
+
+6∗∗3=6×6×6=216 cm
+3
+
+2. Cells in a square arrangement:
+
+9∗∗2=9×9=81 cells.
+
+3. 5∗∗4=5×5×5×5=625
+
+4. Total pixels:
+
+1024∗∗2=1,048,576 pixels.
+
+5. Predict the output:
+
+Output: 0.5
+
+Explanation: A negative exponent gives the reciprocal. Thus, 2
+−1
+=1/2.
+
+6. 3 ** 4 = 81
+
+7. Area of a square:
+
+Answer: 81 square units.
+
+8. 2 ** 5 = 32 and 5 ** 2 = 25. They are not equal because their bases and exponents are different.
+
+9. Predict and explain:
+
+First output: 512 — exponentiation is right-associative, so this means 2∗∗(3∗∗2)=2∗∗9.
+
+Second output: 64 — parentheses make it (2∗∗3)∗∗2=8∗∗2.
+
+Third output: 0.125 — 2
+−3
+=1/8.
+
+The commented-out expression produces no output. If uncommented, -2 ** 2 causes a SyntaxError because the unary minus cannot appear directly before exponentiation without parentheses.
+
+Fifth output: 4 — (-2) ** 2 = 4.
+
+Sixth output: 2 — 4 ** 0.5 calculates the square root of 4.
+
+10. Predict the output:
+
+Output: 1
+
+Explanation: Any nonzero number raised to the power of zero equals 1.
+
+B] Assignment Operators
+1. Simple Assignment (=)
+
+1. Store a student's name and marks:
+
+2. Create a score variable with value 0:
+
+3. Assign 50 to three variables using chained assignment:
+
+4. Predict the output:
+
+Output: 100
+
+5. Predict the output:
+
+Output: 15 30
+
+Explanation: q receives a copy of the value of p. Changing q does not change p.
+
+2. Add and Assign (+=)
+
+1. Update the player's score:
+
+2. Update the wallet balance:
+
+3. Predict the output:
+
+Output: 15
+
+4. Predict the output:
+
+Output: "Good Morning"
+
+5. Final value of n:
+
+Output: "205"
+
+Explanation: Because "5" is a string, the += operation joins it to 20 instead of performing numeric addition.
+
+3. Subtract and Assign (-=)
+
+1. Update player health:
+
+2. Update stock:
+
+3. Predict the output:
+
+Output: 3
+
+4. Predict the output:
+
+Output: 25
+
+Explanation: The numeric string "40" is converted to a number before subtraction.
+
+5. Result of x -= 5:
+
+Output: NaN
+
+Explanation: "abc" cannot be converted into a valid number, so the subtraction produces NaN.
+
+4. Multiply and Assign (*=)
+
+1. Apply 18% GST to an item costing ₹500:
+
+Answer: ₹590
+
+2. Triple a quantity of 8:
+
+3. Predict the output:
+
+Output: 220.00000000000003 is possible in JavaScript because of floating-point precision; the mathematical result is 220.
+
+4. Predict the output:
+
+Output: 21
+
+5. Result of y *= 2:
+
+Output: NaN
+
+Explanation: "hello" is not a valid number, so multiplication produces NaN.
+
+5. Divide and Assign (/=)
+
+1. Divide 180 chocolates equally among 6 children:
+
+Answer: 30 chocolates per child.
+
+2. Calculate average speed:
+
+Answer: 60 km/h
+
+3. Predict the output:
+
+Output: 50
+
+4. Predict the output:
+
+Output: 25
+
+5. Result of dividing by zero:
+
+Output: Infinity
+
+Explanation: A positive, nonzero number divided by zero produces Infinity in JavaScript.
+
+6. Modulus and Assign (%=)
+
+1. Store the remainder when 47 is divided by 6:
+
+2. Keep only the remainder when 23 is divided by 12:
+
+3. Predict the output:
+
+Output: 4
+
+4. Predict the output:
+
+Output: 2
+
+5. Result when the divisor is zero:
+
+Output: NaN
+
+Explanation: The remainder operation with zero as the divisor is undefined in JavaScript.
+
+7. Exponentiation and Assign (**=)
+
+1. Calculate the volume of a cube with a side of 5:
+
+Answer: 125 cubic units.
+
+2. Square the number 4:
+
+3. Predict the output:
+
+Output: 32
+
+4. Predict the output:
+
+Output: 2
+
+5. Result of p **= -1:
+
+Output: 0.5
+
+Explanation: A negative exponent returns the reciprocal of the base raised to the corresponding positive power.
+
+C] Comparison Operators
+
+Comparison operators return a Boolean value: true or false.
+
+1. Loose Equality (==)
+
+1. Check whether "25" is loosely equal to 25:
+
+Output: true
+
+Explanation: The loose equality operator allows type conversion before comparing values.
+
+2. Check whether 0 == false:
+
+Output: true
+
+3. Predict the output:
+
+Outputs:
+
+true
+
+true
+
+4. Predict the output:
+
+Outputs:
+
+true
+
+true
+
+Explanation: Loose equality performs type conversions. An empty string and an empty array can both compare equal to false under these conversions.
+
+5. Why does NaN == NaN return false?
+
+Answer: NaN represents an invalid or unrepresentable numeric result. It is not equal to any value, including itself, so NaN == NaN returns false.
+
+2. Loose Inequality (!=)
+
+1. Check whether "18" != 18:
+
+Output: false
+
+Explanation: After type conversion, both values are equal.
+
+2. A stored password is "1234" and the entered value is the number 1234. Will != return true?
+
+Answer: No. "1234" != 1234 returns false because loose inequality converts the values before comparison.
+
+3. Predict the output:
+
+Outputs:
+
+false
